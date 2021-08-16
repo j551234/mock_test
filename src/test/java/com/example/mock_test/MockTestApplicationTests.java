@@ -1,11 +1,13 @@
 package com.example.mock_test;
 
+import com.example.mock_test.model.Company;
+import com.example.mock_test.model.Person;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 @SpringBootTest
 class MockTestApplicationTests {
@@ -21,7 +23,11 @@ class MockTestApplicationTests {
     @Test
     void testMock() {
         when(testman.getName()).thenReturn("james");
-        System.out.println(testcom.getOwner().getName());
+        assert (testman.getName().equals("james"));
+
+        verify(testman, times(1)).getName();
+
+
     }
 
 }

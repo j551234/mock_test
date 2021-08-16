@@ -1,5 +1,7 @@
 package com.example.mock_test;
 
+import com.example.mock_test.model.Company;
+import com.example.mock_test.model.Person;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;

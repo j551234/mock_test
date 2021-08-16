@@ -1,6 +1,4 @@
-package com.example.mock_test;
-
-import org.springframework.beans.factory.annotation.Autowired;
+package com.example.mock_test.model;
 
 public class Company {
 

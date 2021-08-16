@@ -1,4 +1,4 @@
-package com.example.mock_test;
+package com.example.mock_test.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

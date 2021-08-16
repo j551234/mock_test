@@ -1,4 +1,4 @@
-package com.example.mock_test;
+package com.example.mock_test.model;
 
 public class Person {
     String name;
